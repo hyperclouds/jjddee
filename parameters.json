@@ -39,7 +39,7 @@
         "value": 127
       },     
       "OptimizeOsScriptURI": {
-        "value": "https://stavdtmpstorage.blob.core.windows.net/scripts/OptimizeOS.ps1"
+        "value": "https://xxx.blob.core.windows.net/scripts/OptimizeOS.ps1"
       }, 
        "scriptmsiURI": {
         "value": "https://stavdtmpstorage.blob.core.windows.net/scripts/scriptmsi.ps1"
