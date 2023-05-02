@@ -45,10 +45,10 @@
         "value": "https://stavdtmpstorage.blob.core.windows.net/scripts/scriptmsi.ps1"
       },      
        "installappszipURI": {
-         "value": "https://stavdtmpstorage.blob.core.windows.net/scripts/installappzip.ps1"
+         "value": "https://xxx.blob.core.windows.net/scripts/installappzip.ps1"
       },
        "installcoreappsexeURI": {
-        "value": "https://stavdtmpstorage.blob.core.windows.net/scripts/installcoreappsexe.ps1"
+        "value": "https://xxx.blob.core.windows.net/scripts/installcoreappsexe.ps1"
       }         
     }
   }
