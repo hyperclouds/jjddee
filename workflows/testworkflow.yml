@@ -1,0 +1,20 @@
+on: [push]
+name: Deploy Azure Bicep
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@main
+    # Log into Azure
+    - uses: azure/login@v1
+      with:
+        creds: ${{ secrets.CTCAZUREAVDMAGEBUILDERSPI }}
+      # Deploy Bicep file
+    - name: deploy
+      uses: azure/arm-deploy@v1
+      with:
+        scope: 'subscription'
+        subscriptionId: '54d81e17-d7a8-459c-9cca-ed176d923bb2'
+        region: 'westeurope'
+        template: ./azureDeploy.bicep
+        parameters: ./parameters.json
