@@ -1,0 +1,54 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "resourceGroupName": {
+            "value": "rg-avdaib-prd-we-03"
+        },
+      "location": {
+        "value": "West Europe"
+      },
+      "identityName": {
+        "value": "id-avdaib-prd-we-03"
+      },
+      "computeGalleryName": {
+        "value": "acg_avdcomputegallary_prd_we_03"
+      },
+      "imageDefinitionName": {
+        "value": "wind10avd22h2"
+      },
+      "imageTemplateName": {
+        "value": "avd10ImageTemplate03"
+      },
+      "sourceImagePublisher": {
+        "value": "MicrosoftWindowsDesktop"
+      },
+      "sourceImageOffer": {
+        "value": "office-365"
+      },
+      "sourceImageSku": {
+        "value": "win10-22h2-avd-m365"
+      },
+      "sourceImageVersion": {
+        "value": "latest"
+      },
+      "vmSize": {
+        "value": "Standard_D2_v2"
+      },
+      "diskSize": {
+        "value": 127
+      },     
+      "OptimizeOsScriptURI": {
+        "value": "https://stavdtmpstorage.blob.core.windows.net/scripts/OptimizeOS.ps1"
+      }, 
+       "scriptmsiURI": {
+        "value": "https://stavdtmpstorage.blob.core.windows.net/scripts/scriptmsi.ps1"
+      },      
+       "installappszipURI": {
+         "value": "https://stavdtmpstorage.blob.core.windows.net/scripts/installappzip.ps1"
+      },
+       "installcoreappsexeURI": {
+        "value": "https://stavdtmpstorage.blob.core.windows.net/scripts/installcoreappsexe.ps1"
+      }         
+    }
+  }
